@@ -25,10 +25,14 @@ export default function CouponCard({ coupon, onGetCode }: CouponCardProps) {
           <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
           <span className="dark:text-white">{coupon.rating.toFixed(1)}</span>
         </div>
-        {coupon.isStudentOnly && (
-          <div className="absolute top-2 right-2 bg-brand px-2 py-0.5 rounded-lg flex items-center gap-1 text-[10px] font-black text-white shadow-lg animate-pulse-slow">
-            <GraduationCap className="w-3 h-3" />
-            STUDENT
+        {coupon.studentBadgeIcon && (
+          <div className="absolute top-2 right-2 z-10">
+            <img 
+              src={coupon.studentBadgeIcon} 
+              alt="Student Badge" 
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain drop-shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:scale-110 transition-transform duration-300" 
+              referrerPolicy="no-referrer"
+            />
           </div>
         )}
       </div>

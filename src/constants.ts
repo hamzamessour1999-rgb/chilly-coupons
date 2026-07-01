@@ -10,6 +10,7 @@ export interface Coupon {
   category: string;
   details: string;
   isStudentOnly?: boolean;
+  studentBadgeIcon?: string;
 }
 
 export const COUPONS: Coupon[] = [
@@ -28,16 +29,17 @@ export const COUPONS: Coupon[] = [
   },
   {
     id: '11',
-    title: 'Target Discount for students',
+    title: 'Target Discount for Gta 6',
     image: 'https://i.postimg.cc/MKysH2cs/free-Target-gift-card.jpg',
     rating: 5.0,
-    type: '80% OFF Target student discount',
+    type: '90% OFF Target student discount for Gta6',
     description: 'Target Discount for students 90% off your purchase',
     couponsLeft: 278,
     usesToday: 71,
     category: 'Discount',
-    details: '80% OFF Target student discount — available for verified students. Applies automatically at checkout on eligible products like iPhone 17 and Pink MacBook Neo. Limited time only.',
-    isStudentOnly: true
+    details: '90% OFF GTA 6 — Exclusive launch discount available for a limited time. Applies automatically at checkout for eligible purchases. Dont miss out.',
+    isStudentOnly: true,
+    studentBadgeIcon: 'https://i.postimg.cc/x8VfvkN3/image-(3)-Photoroom.png'
   },
   {
     id: '12',
@@ -50,6 +52,19 @@ export const COUPONS: Coupon[] = [
     usesToday: 71,
     category: 'Discount',
     details: '90% OFF Starbucks student discount — available for verified students. Applies automatically at checkout on eligible drinks and menu items. Limited time only.',
+    isStudentOnly: true
+  },
+  {
+    id: '12',
+    title: 'McDonalds discount for students',
+    image: 'https://i.postimg.cc/dVjjDLBj/163ba670-8648-11ef-ac05-1b95256399e8.jpg',
+    rating: 5.0,
+    type: '95% off from your order',
+    description: '95% OFF McDonald’s menu 🍔 — no code needed, the discount applies automatically.',
+    couponsLeft: 278,
+    usesToday: 71,
+    category: 'Discount',
+    details: '95% OFF McDonalds student discount — available for verified students. Applies automatically at checkout on eligible meals, drinks, and menu items. Limited time only!',
     isStudentOnly: true
   },
   {

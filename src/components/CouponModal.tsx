@@ -102,17 +102,14 @@ export default function CouponModal({ coupon, isOpen, onClose }: CouponModalProp
                     <X className="w-5 h-5" />
                   </button>
 
-                  <h2 className="text-2xl font-display font-bold text-white mb-4 leading-tight">
-                    {coupon.title}
+                   <h2 className="text-2xl font-display font-bold text-white mb-4 leading-tight flex items-center gap-2">
+                    <span>{coupon.title}</span>
+                    {coupon.studentBadgeIcon && (
+                      <img src={coupon.studentBadgeIcon} alt="Badge" className="w-6 h-6 object-contain inline-block shrink-0" referrerPolicy="no-referrer" />
+                    )}
                   </h2>
                   
                   <div className="flex gap-2">
-                    {coupon.isStudentOnly && (
-                      <div className="bg-brand px-3 py-1.5 rounded-full flex items-center gap-2 text-xs font-black text-white border border-white/20 shadow-lg animate-pulse-slow">
-                        <GraduationCap className="w-3.5 h-3.5" />
-                        Student Only
-                      </div>
-                    )}
                     <div className="bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-2 text-xs font-bold text-white border border-white/10">
                       <Ticket className="w-3.5 h-3.5" />
                       {coupon.couponsLeft} coupons left
