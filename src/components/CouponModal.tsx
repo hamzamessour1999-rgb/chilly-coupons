@@ -89,7 +89,7 @@ export default function CouponModal({ coupon, isOpen, onClose }: CouponModalProp
               <div className="relative h-52 shrink-0 overflow-hidden">
                 <div 
                   className="absolute inset-0 bg-cover bg-center blur-[3px] scale-110"
-                  style={{ backgroundImage: `url(${coupon.image})` }}
+                  style={{ backgroundImage: `url("${coupon.image}")` }}
                 >
                   <div className="absolute inset-0 bg-black/60" />
                 </div>

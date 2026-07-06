@@ -29,17 +29,16 @@ export const COUPONS: Coupon[] = [
   },
   {
     id: '11',
-    title: 'Target Discount for Gta 6',
-    image: 'https://i.postimg.cc/MKysH2cs/free-Target-gift-card.jpg',
+    title: 'Fox One 3-Month Promo Code',
+    image: 'https://i.postimg.cc/tJDQDLHB/image-(7).png',
     rating: 5.0,
-    type: '90% OFF Target student discount for Gta6',
-    description: 'Target Discount for students 90% off your purchase',
+    type: 'Fox One 3-Month Promo Code',
+    description: 'Get Fox One For 3 Months',
     couponsLeft: 278,
     usesToday: 71,
     category: 'Discount',
-    details: '90% OFF GTA 6 — Exclusive launch discount available for a limited time. Applies automatically at checkout for eligible purchases. Dont miss out.',
-    isStudentOnly: true,
-    studentBadgeIcon: 'https://i.postimg.cc/x8VfvkN3/image-(3)-Photoroom.png'
+    details: 'FOX One is a direct-to-consumer streaming service from the Fox Corporation that bundles live news, sports, and entertainment for $19.99 a month. It allows cord-cutters to stream content without a traditional cable package.',
+    isStudentOnly: false,
   },
   {
     id: '12',
