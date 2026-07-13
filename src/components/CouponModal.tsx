@@ -228,20 +228,22 @@ export default function CouponModal({ coupon, isOpen, onClose }: CouponModalProp
                         <span className="text-[10px] tracking-[0.12em] font-black text-[#00C2FF] uppercase">
                           COUPON CODE
                         </span>
-                        <div className="flex items-center gap-1 bg-emerald-50 dark:bg-emerald-500/10 px-2.5 py-0.5 rounded-full text-[9px] font-black text-emerald-600 dark:text-emerald-400 uppercase tracking-wider border border-emerald-500/20">
-                          <Check className="w-2.5 h-2.5" />
-                          UNLOCKED
+                        <div className="flex items-center gap-1 bg-[#E6F8FF] dark:bg-white/10 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-[9px] font-black text-[#0088CC] dark:text-slate-300 uppercase tracking-wider border border-[#00C2FF]/20">
+                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                          </svg>
+                          LOCKED
                         </div>
                       </div>
 
-                      {/* Unhidden Code */}
-                      <div className="relative py-2 px-4 flex items-center justify-center w-full select-all">
-                        <span className="text-2xl sm:text-3.5xl font-mono font-extrabold tracking-widest text-[#00C2FF] drop-shadow-[0_0_8px_rgba(0,194,255,0.2)]">
+                      {/* Blurred Code */}
+                      <div className="relative py-2 px-4 flex items-center justify-center w-full select-none">
+                        <span className="text-2xl sm:text-3.5xl font-mono font-bold tracking-widest text-[#00C2FF]/40 blur-[5px]">
                           TF68Q-WRN53-PK
                         </span>
                         
-                        {/* Decorative stars */}
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none gap-8 opacity-40">
+                        {/* Decorative stars behind blur */}
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none gap-8 opacity-25">
                           <Star className="w-5 h-5 text-[#00C2FF] fill-[#00C2FF] animate-pulse" />
                           <Star className="w-5 h-5 text-[#00C2FF] fill-[#00C2FF] animate-pulse delay-75" />
                         </div>
@@ -256,7 +258,7 @@ export default function CouponModal({ coupon, isOpen, onClose }: CouponModalProp
                         onClick={handleCopy}
                         className="w-full bg-[#00C2FF] hover:bg-[#00B4EB] text-white font-black py-4 px-6 rounded-2xl shadow-xl transition-all text-lg flex items-center justify-center gap-2 pointer-events-auto cursor-pointer"
                       >
-                        Get New Code
+                        Get Full Code
                       </motion.button>
                     </div>
 
